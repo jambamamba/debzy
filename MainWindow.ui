@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>596</width>
+    <height>449</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Debzy</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="debmaker.qrc">:/resources/red-throated-bee-eater.png</pixmap>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Red Throated Bee Eater
+Debian Package Maker</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>https://www.osletek.com</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Version: 1.0</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab_1">
+         <attribute name="title">
+          <string>Control File</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="ControlWidget" name="controlWidget" native="true"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>App Icon</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="IconWidget" name="iconWidget" native="true"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>Package Files</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="FileListWidget" name="fileListWidget" native="true"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>Startup Script</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="StartupScript" name="startupScriptWidget" native="true"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_5">
+         <attribute name="title">
+          <string>Log</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="LogWidget" name="logWidget" native="true"/>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QProgressBar" name="progressBar">
+        <property name="value">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonMakeDeb">
+        <property name="text">
+         <string>Make Deb</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>596</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Project</string>
+    </property>
+    <addaction name="actionSaveProject"/>
+    <addaction name="actionSaveAsProject"/>
+    <addaction name="actionLoadProject"/>
+    <addaction name="actionLoadRecent"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionLoadProject">
+   <property name="text">
+    <string>Load</string>
+   </property>
+  </action>
+  <action name="actionSaveProject">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSaveAsProject">
+   <property name="text">
+    <string>Save as ...</string>
+   </property>
+  </action>
+  <action name="actionLoadRecent">
+   <property name="text">
+    <string>Load Recent</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>FileListWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">FileListWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ControlWidget</class>
+   <extends>QWidget</extends>
+   <header>ControlWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>IconWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">IconWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>LogWidget</class>
+   <extends>QWidget</extends>
+   <header>LogWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>StartupScript</class>
+   <extends>QWidget</extends>
+   <header>StartupScript.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="debmaker.qrc"/>
+ </resources>
+ <connections/>
+</ui>

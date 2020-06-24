@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FileListWidget</class>
+ <widget class="QWidget" name="FileListWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>529</width>
+    <height>346</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>Install Directory</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditInstallDirectory">
+       <property name="text">
+        <string>/opt</string>
+       </property>
+       <property name="placeholderText">
+        <string>/opt/myprogram</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>Drag and drop your files below</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Filter:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditFileFilter">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonFindReplace">
+       <property name="maximumSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="debmaker.qrc">
+         <normaloff>:/resources/find-replace.png</normaloff>:/resources/find-replace.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonLibraryGrabber">
+       <property name="maximumSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="debmaker.qrc">
+         <normaloff>:/resources/wizard.png</normaloff>:/resources/wizard.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonSelectFiles">
+       <property name="maximumSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="debmaker.qrc">
+         <normaloff>:/resources/folder-with-pictures.png</normaloff>:/resources/folder-with-pictures.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonClearFiles">
+       <property name="maximumSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="debmaker.qrc">
+         <normaloff>:/resources/delete.png</normaloff>:/resources/delete.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QListView" name="fileListView"/>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="debmaker.qrc"/>
+ </resources>
+ <connections/>
+</ui>

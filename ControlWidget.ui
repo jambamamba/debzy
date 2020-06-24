@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ControlWidget</class>
+ <widget class="QWidget" name="ControlWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>463</height>
+   </rect>
+  </property>
+  <property name="controlWidget" stdset="0">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>380</width>
+        <height>443</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="labelPackage">
+         <property name="text">
+          <string>Package</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEditPacakge">
+         <property name="text">
+          <string>com.mydomain.myprogram</string>
+         </property>
+         <property name="placeholderText">
+          <string>com.mydomain.myprogram</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="labelName">
+         <property name="text">
+          <string>Executable</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEditName">
+         <property name="text">
+          <string>My Program</string>
+         </property>
+         <property name="placeholderText">
+          <string>My Program</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="labelDescription">
+         <property name="text">
+          <string>Description</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPlainTextEdit" name="plainTextEditDescription">
+         <property name="plainText">
+          <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</string>
+         </property>
+         <property name="placeholderText">
+          <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="labelAuthor">
+         <property name="text">
+          <string>Author</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="lineEditAuthor">
+         <property name="text">
+          <string>Oosman &lt;support@osletek.com&gt;</string>
+         </property>
+         <property name="placeholderText">
+          <string>Oosman &lt;support@osletek.com&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="labelMaintainer">
+         <property name="text">
+          <string>Maintainer</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="lineEditMaintainer">
+         <property name="text">
+          <string>Oosman &lt;support@osletek.com&gt;</string>
+         </property>
+         <property name="placeholderText">
+          <string>Oosman &lt;support@osletek.com&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="labelApproxSizeKb">
+         <property name="text">
+          <string>Approx. Size</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLineEdit" name="lineEditApproxSizeMb">
+           <property name="text">
+            <string>100</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MegaBytes">
+           <property name="text">
+            <string>Mega Bytes</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="labelVersion">
+         <property name="text">
+          <string>Version</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLineEdit" name="lineEditVersion">
+         <property name="text">
+          <string>1.0</string>
+         </property>
+         <property name="placeholderText">
+          <string>1.0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="labelSection">
+         <property name="text">
+          <string>Section</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QComboBox" name="comboBoxSection"/>
+       </item>
+       <item row="10" column="0">
+        <widget class="QLabel" name="labelArchitecture">
+         <property name="text">
+          <string>Architecture</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="1">
+        <widget class="QLineEdit" name="lineEditArchitecture">
+         <property name="text">
+          <string>amd64</string>
+         </property>
+         <property name="placeholderText">
+          <string>amd64</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="0">
+        <widget class="QLabel" name="labelHomepage">
+         <property name="text">
+          <string>Homepage</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="1">
+        <widget class="QLineEdit" name="lineEditHomepage">
+         <property name="text">
+          <string>http://www.osletek.com</string>
+         </property>
+         <property name="placeholderText">
+          <string>http://www.osletek.com</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="0">
+        <widget class="QLabel" name="labelWebsite">
+         <property name="text">
+          <string>Website</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="1">
+        <widget class="QLineEdit" name="lineEditWebsite">
+         <property name="text">
+          <string>http://www.osletek.com/pg/</string>
+         </property>
+         <property name="placeholderText">
+          <string>http://www.osletek.com/pg/</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="labelMenuCategory">
+         <property name="text">
+          <string>Menu Category</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QComboBox" name="comboBoxMenuCategory"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

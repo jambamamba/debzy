@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/folder-with-pictures.png</file>
+        <file>resources/delete.png</file>
+        <file>resources/wizard.png</file>
+        <file>resources/bread1.png</file>
+        <file>resources/bread2.png</file>
+        <file>resources/bread3.png</file>
+        <file>resources/find-replace.png</file>
+        <file>resources/red-throated-bee-eater.png</file>
+    </qresource>
+</RCC>
